@@ -1,15 +1,14 @@
 import {getBirdImages} from "../../services/getBirdImages";
 import React, {useEffect, useState} from "react";
-import {Box, IconButton, ImageList, ImageListItem, ImageListItemBar} from "@mui/material";
-import InfoIcon from '@mui/icons-material/Info';
-import CheckCircleIcon from '@mui/icons-material/CheckCircle';
-import {lightGreen} from "@mui/material/colors";
+import {Box, IconButton, ImageList, ImageListItem, ImageListItemBar, SvgIcon} from "@mui/material";
 import {checkForWin} from "../../services/checkForWin";
 import Confetti from 'react-confetti'
 import {InfoModal} from "./components/InfoModal";
 import {WinModal} from "./components/WinModal";
 import {useNavigate} from "react-router";
 import {ImageWithOverlay} from "./components/ImageWithOverlay";
+import {CheckmarkIcon} from "../../assets/icons/CheckmarkIcon.tsx";
+import {InfoIcon} from "../../assets/icons/InfoIcon.tsx";
 
 interface Image {
     "species_code": string;
@@ -214,7 +213,9 @@ export const CardPage = () => {
                                 sx={{background: 'transparent'}}
                                 actionIcon={
                                     <IconButton>
-                                        <CheckCircleIcon sx={{color: lightGreen[500]}}/>
+                                        <SvgIcon>
+                                            <CheckmarkIcon/>
+                                        </SvgIcon>
                                     </IconButton>
                                 }
                             />
@@ -233,7 +234,9 @@ export const CardPage = () => {
                                             aria-label={`info about ${bird.species_common}`}
                                             onClick={(e) => handleOpenInfoModal(bird.species_code, e)}
                                         >
-                                            <InfoIcon/>
+                                            <SvgIcon>
+                                                <InfoIcon/>
+                                            </SvgIcon>
                                         </IconButton>
                                     }
                                 />
@@ -246,7 +249,9 @@ export const CardPage = () => {
                                             aria-label={`info about ${bird.species_common}`}
                                             onClick={(e) => handleOpenInfoModal(bird.species_code, e)}
                                         >
-                                            <InfoIcon/>
+                                            <SvgIcon>
+                                                <InfoIcon/>
+                                            </SvgIcon>
                                         </IconButton>
                                     }
                                 />

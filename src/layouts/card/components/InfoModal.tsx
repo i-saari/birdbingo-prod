@@ -1,9 +1,9 @@
 import Box from "@mui/material/Box";
-import {Link, Modal, Stack, Typography} from "@mui/material";
-import PersonIcon from "@mui/icons-material/Person";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
-import CalendarMonthIcon from "@mui/icons-material/CalendarMonth";
+import {Link, Modal, Stack, SvgIcon, Typography} from "@mui/material";
 import React from "react";
+import {PersonIcon} from "../../../assets/icons/PersonIcon.tsx";
+import {LocationIcon} from "../../../assets/icons/LocationIcon.tsx";
+import {CalendarIcon} from "../../../assets/icons/CalendarIcon.tsx";
 
 interface Image {
     "species_code": string;
@@ -59,19 +59,25 @@ export const InfoModal: React.FC <{
                     {props.imageInfo?.species_common}
                 </Link>
                 <Stack direction='row' alignItems='center' gap={1}>
-                    <PersonIcon/>
+                    <SvgIcon>
+                        <PersonIcon/>
+                    </SvgIcon>
                     <Typography>
                         {`${props.imageInfo?.photographer}`}
                     </Typography>
                 </Stack>
                 <Stack direction='row' alignItems='center' gap={1}>
-                    <LocationOnIcon/>
+                    <SvgIcon>
+                        <LocationIcon/>
+                    </SvgIcon>
                     <Typography>
                         {`${props.imageInfo?.location}`}
                     </Typography>
                 </Stack>
                 <Stack direction='row' alignItems='center' gap={1}>
-                    <CalendarMonthIcon/>
+                    <SvgIcon>
+                        <CalendarIcon/>
+                    </SvgIcon>
                     <Typography>
                         {`Date: ${props.imageInfo?.date}`}
                     </Typography>

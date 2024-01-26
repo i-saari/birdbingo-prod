@@ -1,9 +1,9 @@
-import {AppBar, Box, IconButton, Toolbar} from "@mui/material";
-import HelpIcon from '@mui/icons-material/Help';
+import {AppBar, Box, IconButton, SvgIcon, Toolbar} from "@mui/material";
 import {useState} from "react";
 import {HelpModal} from "./components/HelpModal";
 import { Link } from "react-router-dom";
 import Title from "../../assets/images/title.png";
+import {HelpIcon} from "../../assets/icons/HelpIcon.tsx";
 
 export const NavBar = () => {
     const [openHelpModal, setOpenHelpModal] = useState(false);
@@ -37,7 +37,11 @@ export const NavBar = () => {
                         size='large'
                         color='inherit'
                         onClick={handleOpenHelpModal}
-                    ><HelpIcon/></IconButton>
+                    >
+                        <SvgIcon>
+                            <HelpIcon/>
+                        </SvgIcon>
+                    </IconButton>
                 </Toolbar>
             </AppBar>
             <HelpModal open={openHelpModal} onClose={handleCloseHelpModal}/>
