@@ -22,7 +22,7 @@ interface Image {
     "ml_link": string;
 }
 
-export const CardPage: React.FC<{}> = () => {
+export const CardPage = () => {
     const [date, setDate] = useState(0);
     const [region, setRegion] = useState('');
     const [size, setSize] = useState(3);
@@ -94,7 +94,7 @@ export const CardPage: React.FC<{}> = () => {
             }
         }
 
-    }, [date, region, size]);
+    }, [date, loading, navigate, region, size]);
 
 
     useEffect(() => {
@@ -143,9 +143,9 @@ export const CardPage: React.FC<{}> = () => {
         if (!loading) {
             localStorage.setItem('selection', JSON.stringify(selection));
         }
-    }, [selection]);
+    }, [loading, selection]);
 
-    const handleOpenInfoModal = (code: string, index: number, e: React.MouseEvent<HTMLSpanElement, MouseEvent>) => {
+    const handleOpenInfoModal = (code: string, e: React.MouseEvent<HTMLSpanElement, MouseEvent>) => {
         e.stopPropagation();
         setImageInfo(birds?.find(b => b.species_code === code));
         setOpenInfoModal(true);
@@ -155,7 +155,7 @@ export const CardPage: React.FC<{}> = () => {
 
     const handleImageClick = (index: number) => {
         if (selection) {
-            let localSelected = selection;
+            const localSelected = selection;
             localSelected[index] = selection[index] === 0 ? 1 : 0;
             setSelection([...localSelected]);
             if (!ignoreWin) {
@@ -231,7 +231,7 @@ export const CardPage: React.FC<{}> = () => {
                                         <IconButton
                                             sx={{color: 'rgba(255, 255, 255, 0.54)'}}
                                             aria-label={`info about ${bird.species_common}`}
-                                            onClick={(e) => handleOpenInfoModal(bird.species_code, index, e)}
+                                            onClick={(e) => handleOpenInfoModal(bird.species_code, e)}
                                         >
                                             <InfoIcon/>
                                         </IconButton>
@@ -244,7 +244,7 @@ export const CardPage: React.FC<{}> = () => {
                                         <IconButton
                                             sx={{color: 'rgba(255, 255, 255, 0.54)'}}
                                             aria-label={`info about ${bird.species_common}`}
-                                            onClick={(e) => handleOpenInfoModal(bird.species_code, index, e)}
+                                            onClick={(e) => handleOpenInfoModal(bird.species_code, e)}
                                         >
                                             <InfoIcon/>
                                         </IconButton>

@@ -1,6 +1,6 @@
 import RegionFrequencies from '../data/RegionFrequencies.json'
 import ImgData from '../data/imgData.json'
-import * as seedrandom from "seedrandom";
+import seedrandom from "seedrandom";
 
 interface Bird {
     "summer_rank": number;
@@ -25,11 +25,11 @@ export const getBirdImages = (region: string, size: number) => {
     const utcToPst = 28800000
     const daysSinceEpoch = Math.floor((new Date().getTime() - utcToPst) / 8.64e7);
     // get daily random number generator
-    const rng = seedrandom(daysSinceEpoch);
+    const rng = seedrandom(String(daysSinceEpoch));
 
     // get list of birds in specified region
     const key: keyof typeof RegionFrequencies = region as keyof typeof RegionFrequencies;
-    let regionList: Bird[] = RegionFrequencies[key];
+    const regionList: Bird[] = RegionFrequencies[key];
 
     // set season from current month
     const month = new Date().getMonth();
@@ -39,9 +39,9 @@ export const getBirdImages = (region: string, size: number) => {
     regionList.sort((a, b) => a[season] - b[season]);
 
     // array of possible bird indices to choose from - always top 25 in region
-    let availableBirds = Array.from(Array(Math.floor(25)).keys())
+    const availableBirds = Array.from(Array(Math.floor(25)).keys())
     // most of the card will be top common birds
-    let birdIdxs = availableBirds.splice(0, Math.floor(size * size * 0.8))
+    const birdIdxs = availableBirds.splice(0, Math.floor(size * size * 0.8))
     // remainder is randomly drawn from birds not selected
     while(birdIdxs.length < size * size) {
         birdIdxs.push(availableBirds.splice(Math.floor(rng() * availableBirds.length), 1)[0])
@@ -59,7 +59,7 @@ export const getBirdImages = (region: string, size: number) => {
     const cardBirds = birdIdxs.map(i => regionList[i]);
 
     // get image data for selected birds
-    let imgList: Image[] = []
+    const imgList: Image[] = []
     cardBirds.forEach((bird: Bird) => {
         imgList.push(ImgData.find(img => img.species_code === bird.species_code) as Image)
     })

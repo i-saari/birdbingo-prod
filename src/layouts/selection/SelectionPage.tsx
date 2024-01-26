@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import "leaflet/dist/leaflet.css"
 import './css/Map.css'
 import {
@@ -11,7 +11,7 @@ import {useNavigate} from "react-router";
 import {MapView} from "./components/MapView";
 import {SizeButtons} from "./components/SizeButtons";
 
-export const SelectionPage: React.FC<{}> = (props) => {
+export const SelectionPage = () => {
     const [date, setDate] = useState(0);
     const [region, setRegion] = useState('');
     const [size, setSize] = useState(3);

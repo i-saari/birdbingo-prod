@@ -1,20 +1,23 @@
 import BCRData from "../data/BCR.json";
-import * as turf from "@turf/turf"
-import { FeatureCollection } from "@turf/turf";
+// @ts-expect-error -- turf/dist does not correctly include declaration file
+import { FeatureCollection, featureEach, booleanPointInPolygon, flatten, Feature} from "@turf/turf";
 
 export const getRegionContainingPoint = (point: number[]) => {
+    // const turf = require('@turf/turf');
+    // const { FeatureCollection, featureEach, booleanPointInPolygon, flatten, Feature} = turf;
+
     let region = '';
 
     // Loop through geojson object and check if point is inside. Return region number
-    turf.featureEach(BCRData as FeatureCollection, function (currentFeature, featureIndex) {
+    featureEach(BCRData as typeof FeatureCollection, function (currentFeature: typeof Feature) {
 
         let containsPt = false;
         // convert geometry collection to feature collection
-        const flattenedCollection = turf.flatten(currentFeature);
+        const flattenedCollection = flatten(currentFeature);
 
         // loop through resulting collection
-        turf.featureEach(flattenedCollection, function (flattenedFeature, flatIndex) {
-            const ptInGeometry = turf.booleanPointInPolygon(point, flattenedFeature);
+        featureEach(flattenedCollection, function (flattenedFeature: typeof Feature) {
+            const ptInGeometry = booleanPointInPolygon(point, flattenedFeature);
             if (ptInGeometry) containsPt = true;
         })
 

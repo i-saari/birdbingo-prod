@@ -7,8 +7,8 @@ import MarkerIcon from "../../../assets/images/marker-icon.png";
 
 export const LocationMarker: React.FC<{
     locating: boolean,
-    setLocating: any,
-    setRegion: any
+    setLocating: React.Dispatch<React.SetStateAction<boolean>>,
+    setRegion: React.Dispatch<React.SetStateAction<string>>
 }> = (props) => {
     const [position, setPosition] = useState<LatLngExpression>([0,0]);
     const [showMarker, setShowMarker] = useState(false);
@@ -40,7 +40,7 @@ export const LocationMarker: React.FC<{
         if (props.locating) {
             map.locate();
         }
-    }, [props.locating]);
+    }, [map, props.locating]);
 
     return(
         showMarker ? <Marker position={position} icon={icon} /> : <></>

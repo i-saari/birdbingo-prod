@@ -12,7 +12,7 @@ export const NavBar = () => {
         setOpenHelpModal(true);
     }
 
-    const handleCloseHelpModal = () => {
+    const handleCloseHelpModal: () => void = () => {
         setOpenHelpModal(false);
     }
 

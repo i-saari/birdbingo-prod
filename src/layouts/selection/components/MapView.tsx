@@ -6,9 +6,9 @@ import L from "leaflet";
 import {LocationMarker} from "./LocationMarker";
 
 export const MapView: React.FC<{
-    setRegion: any,
+    setRegion: React.Dispatch<React.SetStateAction<string>>,
     locating: boolean,
-    setLocating: any,
+    setLocating: React.Dispatch<React.SetStateAction<boolean>>,
     showBoundaries: boolean
 }> = (props) => {
 
@@ -22,7 +22,7 @@ export const MapView: React.FC<{
         const code = region.properties?.BCR;
 
         layer.on({
-            click: (event: L.LeafletEvent) => {
+            click: () => {
                 props.setRegion(code)
             }
         })

@@ -7,7 +7,10 @@ import {Box, Stack, ToggleButton, ToggleButtonGroup} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
-export const SizeButtons: React.FC <{size: number, setSize: any}> = (props) => {
+export const SizeButtons: React.FC <{
+    size: number,
+    setSize: React.Dispatch<React.SetStateAction<number>>
+}> = (props) => {
     // indicator if user is using wide screen
     const largeScreen = useMediaQuery('(min-width:600px)');
 
@@ -33,13 +36,13 @@ export const SizeButtons: React.FC <{size: number, setSize: any}> = (props) => {
     ]
 
     const handleSizeChange = (
-        event: React.MouseEvent<HTMLElement>,
-        newSize: number | null,
+        _event: React.MouseEvent<HTMLElement>,
+        newSize: number
     ) => {
         props.setSize(newSize);
     };
 
-    return(
+    return (
         <Box  justifyContent='center' alignItems='center'  mb={2} >
             <ToggleButtonGroup
                 value={props.size}
