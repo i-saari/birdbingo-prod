@@ -7,5 +7,5 @@ export default defineConfig({
   build: {
     outDir: 'build'
   },
-  base: "https://i-saari.github.io/birdbingo-prod/"
+  base: "https://i-saari.github.io/"
 })
