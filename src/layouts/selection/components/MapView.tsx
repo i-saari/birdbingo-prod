@@ -19,7 +19,7 @@ export const MapView: React.FC<{
     }
 
     const onEachRegion = (region: Feature, layer: L.Layer) => {
-        const code = region.properties?.BCR;
+        const code = String(region.properties?.BCR);
 
         layer.on({
             click: () => {
@@ -32,11 +32,10 @@ export const MapView: React.FC<{
         <div>
             <MapContainer center={[45, -95]} zoom={3} attributionControl={false}>
                 <TileLayer
-                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>
-                        contributors'
+                    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
                     url="https://tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
-                <AttributionControl prefix={'Leaflet'}/>
+                <AttributionControl prefix={'<a href="https://leafletjs.com/">Leaflet</a>'}/>
                 <GeoJSON
                     data={BCRData as GeoJsonObject}
                     style={geoStyle}
