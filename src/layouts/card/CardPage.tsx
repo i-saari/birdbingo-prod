@@ -262,7 +262,7 @@ export const CardPage = () => {
             </ImageList>
             <InfoModal open={openInfoModal} onClose={handleCloseInfoModal} imageInfo={imageInfo} />
             <WinModal open={won} onClose={handleCloseWinModal}
-                      handleContinue={handleContinueCard} size={size}
+                      handleContinue={handleContinueCard}
                       setStartConfetti={setStartConfetti}/>
         </Box>
     )

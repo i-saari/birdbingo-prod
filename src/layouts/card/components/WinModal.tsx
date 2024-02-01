@@ -19,8 +19,7 @@ const modalStyle = {
 export const WinModal: React.FC <{
     open: boolean,
     onClose: () => void,
-    handleContinue: () => void,
-    size: number,
+    handleContinue: () => void
     setStartConfetti: React.Dispatch<React.SetStateAction<boolean>>
 }> = (props) => {
     const navigate = useNavigate();
@@ -41,7 +40,7 @@ export const WinModal: React.FC <{
                     gutterBottom>BINGO!
                 </Typography>
                 <Typography gutterBottom>
-                    {`You've completed today's ${props.size}x${props.size} bingo card. Come back
+                    {`You've completed today's bingo card. Come back
                     tomorrow for a fresh arrangement.`}
                 </Typography>
                 <Typography gutterBottom>
