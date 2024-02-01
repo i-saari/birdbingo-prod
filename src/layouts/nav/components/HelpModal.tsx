@@ -41,8 +41,7 @@ export const HelpModal: React.FC <{
                     <Typography>
                         To get started, select your location on the map, or press Find Me to automatically get
                         your location. Then select the size of your bingo card by clicking on the birds below the
-                        map. Finally, click New Card to start a new game. If you have already started a card today,
-                        you can continue playing it by clicking Continue. Cards are rearranged with new birds every
+                        map. Finally, click Play to start a new game. Cards are rearranged with new birds every
                         night so check back tomorrow for a new game.
                     </Typography>
                     <Typography>
