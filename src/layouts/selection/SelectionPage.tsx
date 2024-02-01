@@ -5,17 +5,17 @@ import {
     Button,
     Box,
     CircularProgress,
-    Stack, Alert,
+    Stack, Alert, Typography, Link,
 } from "@mui/material";
 import {useNavigate} from "react-router";
 import {MapView} from "./components/MapView";
 import {SizeButtons} from "./components/SizeButtons";
 
 export const SelectionPage = () => {
-    const [date, setDate] = useState(0);
+    // const [date, setDate] = useState(0);
     const [region, setRegion] = useState('');
     const [size, setSize] = useState(3);
-    const [isCurrent, setIsCurrent] = useState(false);
+    // const [isCurrent, setIsCurrent] = useState(false);
     // trigger to find user's location
     const [locating, setLocating] = useState(false);
     const [showBoundaries, setShowBoundaries] = useState(false);
@@ -24,58 +24,51 @@ export const SelectionPage = () => {
 
     // get date from local storage on site load
     useEffect(() => {
-        const storedDate = localStorage.getItem('date');
+        const storedSize = localStorage.getItem('size');
+        const storedRegion = localStorage.getItem('region');
 
-        // if date is found assess currency
-        if (storedDate) {
-            setDate(parseInt(storedDate));
-
-            // delay until date is loaded
-            if (date > 0) {
-                if (date == Math.floor(new Date().getTime() / 8.64e7)) {
-                    // data matches today's date
-                    setIsCurrent(true);
-                } else {
-                    // out of date
-                    setIsCurrent(false);
-                }
-            }
+        if (storedSize && storedRegion) {
+            setSize(parseInt(storedSize));
+            setRegion(storedRegion);
         }
 
-    }, [date]);
+    }, []);
 
     const handleCreateButton = () => {
-        if (region == '') {
+        if (region === '') {
             setShowAlert(true);
         } else {
             setShowAlert(false);
-            // record game setup
+
+            // get previously stored game setup
+            const storedDate = localStorage.getItem('date');
+            const storedRegion = localStorage.getItem('region');
+            const storedSize = localStorage.getItem('size');
+
             localStorage.setItem('date', String(Math.floor(new Date().getTime() / 8.64e7)));
             localStorage.setItem('region', region);
             localStorage.setItem('size', String(size));
 
-            // reset game selections
-            localStorage.setItem('selection', JSON.stringify(new Array(size * size).fill(0)));
-            localStorage.removeItem('ignoreWin');
+            if (storedDate && storedRegion && storedSize) {
+                if (parseInt(storedDate) !== Math.floor(new Date().getTime() / 8.64e7) ||
+                    storedRegion !== region || parseInt(storedSize) !== size) {
+                    // game setup doesn't match stored setup -> reset game
+                    localStorage.setItem('selection', JSON.stringify(new Array(size * size).fill(0)));
+                    localStorage.removeItem('ignoreWin');
+                }
+            }
+
             navigate('/card');
         }
-    }
-
-    const handleContinueButton = () => {
-        navigate('/card');
     }
 
     const handleFindMeButton = () => {
         setLocating(prevState => !prevState);
     }
 
-    // set size to default radio selection on page load
-    useEffect(() => {
-        setSize(3);
-    }, []);
-
     return (
         <Stack direction='column' height='calc(100vh - 64px)'>
+            {/*<Typography variant='h5' sx={{'m': 1}}>Pick your location</Typography>*/}
             <Box width='100%'>
                 <MapView
                     setRegion={setRegion}
@@ -89,7 +82,7 @@ export const SelectionPage = () => {
                     left: 60,
                     zIndex: 1000
                 }}>
-                    <Stack direction='row' spacing={2} >
+                    <Stack direction='row' spacing={2}>
                         <Button onClick={() => setShowBoundaries(!showBoundaries)} variant='contained'>
                             {showBoundaries ? 'HIDE REGIONS' : 'SHOW REGIONS'}
                         </Button>
@@ -98,16 +91,21 @@ export const SelectionPage = () => {
                     </Stack>
                 </Box>
             </Box>
+            {/*<Typography variant='h5' sx={{'m': 1}}>Choose your difficulty</Typography>*/}
             <SizeButtons size={size} setSize={setSize}/>
             <Stack direction='row' spacing={2} justifyContent='center' mb={2}>
-                <Button onClick={handleCreateButton} variant='contained'>New Card</Button>
-                <Button onClick={handleContinueButton} variant='contained' disabled={!isCurrent}>
-                    Continue
-                </Button>
+                <Button onClick={handleCreateButton} variant='contained'>Play</Button>
             </Stack>
             {showAlert && <Box display='flex' justifyContent='center'>
                 <Alert severity='warning'>Please select land in North America</Alert>
             </Box>}
+            <Box position='fixed' bottom='0' width='100%'>
+                <Typography variant='subtitle1' align='center' color='text.secondary' gutterBottom>
+                    <Link color='inherit' href='mailto:birdbingofun@gmail.com'>
+                        Contact
+                    </Link>
+                </Typography>
+            </Box>
         </Stack>
     )
 }
