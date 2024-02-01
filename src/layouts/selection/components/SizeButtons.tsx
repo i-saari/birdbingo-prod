@@ -39,7 +39,9 @@ export const SizeButtons: React.FC <{
         _event: React.MouseEvent<HTMLElement>,
         newSize: number
     ) => {
-        props.setSize(newSize);
+        if (newSize !== null) {
+            props.setSize(newSize);
+        }
     };
 
     return (
@@ -50,16 +52,16 @@ export const SizeButtons: React.FC <{
                 onChange={handleSizeChange}
                 fullWidth
             >
-            {sizeOptions.map((option, index) => (
-                <ToggleButton value={option.value} color='primary' key={index}>
-                    <Stack direction='column' justifyContent='center' height='100%' display='flex'>
-                        <Typography variant='h5' sx={{textTransform: 'none'}}>{option.title}</Typography>
-                        <img src={option.img} alt={option.subtitle}
-                             style={{ objectFit: 'contain', height: largeScreen? '100px' : '50px' }}/>
-                        <Typography sx={{textTransform: 'none'}}>{option.subtitle}</Typography>
-                    </Stack>
-                </ToggleButton>
-            ))}
+                {sizeOptions.map((option, index) => (
+                    <ToggleButton value={option.value} color='primary' key={index}>
+                        <Stack direction='column' justifyContent='center' height='100%' display='flex'>
+                            <Typography variant='h5' sx={{textTransform: 'none'}}>{option.title}</Typography>
+                            <img src={option.img} alt={option.subtitle}
+                                 style={{ objectFit: 'contain', height: largeScreen? '100px' : '50px' }}/>
+                            <Typography sx={{textTransform: 'none'}}>{option.subtitle}</Typography>
+                        </Stack>
+                    </ToggleButton>
+                ))}
             </ToggleButtonGroup>
         </Box>
     )
