@@ -22,10 +22,12 @@ export const LocationMarker: React.FC<{
         click(e) {
             setPosition(e.latlng);
             setShowMarker(true);
+            localStorage.setItem('position', JSON.stringify(e.latlng));
         },
         locationfound(e) {
             setPosition(e.latlng);
             setShowMarker(true);
+            localStorage.setItem('position', JSON.stringify(e.latlng));
             props.setRegion(getRegionContainingPoint([e.latlng.lng, e.latlng.lat]));
             map.flyTo(e.latlng, 8);
             props.setLocating(false);
@@ -39,6 +41,12 @@ export const LocationMarker: React.FC<{
     useEffect(() => {
         if (props.locating) {
             map.locate();
+        } else {
+            const storedPosition = localStorage.getItem('position');
+            if (storedPosition) {
+                setPosition(JSON.parse(storedPosition));
+                setShowMarker(true);
+            }
         }
     }, [map, props.locating]);
 
