@@ -1,6 +1,6 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import {Modal, Stack} from "@mui/material";
+import {Link, Modal, Stack} from "@mui/material";
 import Typography from "@mui/material/Typography";
 
 
@@ -60,6 +60,11 @@ export const HelpModal: React.FC <{
                         the current season. Each bingo card is populated with a mix of the most common birds and a
                         random selection of rarer birds from that region. You can click the Show Regions button to see
                         the regions on the map. Bird photos are supplied by the Macaulay Library.
+                    </Typography>
+                    <Typography variant='subtitle1' align='center' gutterBottom>
+                        <Link color='inherit' href='mailto:birdbingofun@gmail.com'>
+                            Contact
+                        </Link>
                     </Typography>
                 </Stack>
             </Box>

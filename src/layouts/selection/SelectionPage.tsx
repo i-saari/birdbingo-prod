@@ -5,7 +5,7 @@ import {
     Button,
     Box,
     CircularProgress,
-    Stack, Alert, Typography, Link,
+    Stack, Alert, Typography,
 } from "@mui/material";
 import {useNavigate} from "react-router";
 import {MapView} from "./components/MapView";
@@ -99,13 +99,7 @@ export const SelectionPage = () => {
             {showAlert && <Box display='flex' justifyContent='center'>
                 <Alert severity='warning'>Please select land in North America</Alert>
             </Box>}
-            <Box position='fixed' bottom='0' width='100%'>
-                <Typography variant='subtitle1' align='center' color='text.secondary' gutterBottom>
-                    <Link color='inherit' href='mailto:birdbingofun@gmail.com'>
-                        Contact
-                    </Link>
-                </Typography>
-            </Box>
+
         </Stack>
     )
 }
