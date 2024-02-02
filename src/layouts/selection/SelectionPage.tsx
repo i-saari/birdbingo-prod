@@ -68,7 +68,7 @@ export const SelectionPage = () => {
 
     return (
         <Stack direction='column' height='calc(100vh - 64px)'>
-            {/*<Typography variant='h5' sx={{'m': 1}}>Pick your location</Typography>*/}
+            <Typography justifyContent='center' variant='h6' sx={{mt: 2, ml: 1}}>Pick your location</Typography>
             <Box width='100%'>
                 <MapView
                     setRegion={setRegion}
@@ -78,7 +78,7 @@ export const SelectionPage = () => {
                 />
                 <Box sx={{
                     position: 'absolute',
-                    top: 80,
+                    top: 120,
                     left: 60,
                     zIndex: 1000
                 }}>
@@ -91,7 +91,7 @@ export const SelectionPage = () => {
                     </Stack>
                 </Box>
             </Box>
-            {/*<Typography variant='h5' sx={{'m': 1}}>Choose your difficulty</Typography>*/}
+            <Typography variant='h6' sx={{mt: 2, ml: 1}}>Choose your difficulty</Typography>
             <SizeButtons size={size} setSize={setSize}/>
             <Stack direction='row' spacing={2} justifyContent='center' mb={2}>
                 <Button onClick={handleCreateButton} variant='contained'>Play</Button>
