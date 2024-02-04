@@ -5,31 +5,38 @@ import {
     Button,
     Box,
     CircularProgress,
-    Stack, Alert, Typography,
+    Stack, Alert,
 } from "@mui/material";
 import {useNavigate} from "react-router";
 import {MapView} from "./components/MapView";
 import {SizeButtons} from "./components/SizeButtons";
+import {IntroModal} from "./components/IntroModal";
 
 export const SelectionPage = () => {
-    // const [date, setDate] = useState(0);
     const [region, setRegion] = useState('');
     const [size, setSize] = useState(3);
-    // const [isCurrent, setIsCurrent] = useState(false);
-    // trigger to find user's location
-    const [locating, setLocating] = useState(false);
     const [showBoundaries, setShowBoundaries] = useState(false);
     const navigate = useNavigate();
     const [showAlert, setShowAlert] = useState(false);
+    const [showIntro, setShowIntro] = useState(false);
+
+    // trigger to find user's location
+    const [locating, setLocating] = useState(false);
 
     // get date from local storage on site load
     useEffect(() => {
         const storedSize = localStorage.getItem('size');
         const storedRegion = localStorage.getItem('region');
+        const storedIntro = localStorage.getItem('intro');
 
         if (storedSize && storedRegion) {
             setSize(parseInt(storedSize));
             setRegion(storedRegion);
+        }
+
+        if (!storedIntro) {
+            setShowIntro(true);
+            localStorage.setItem('intro','false');
         }
 
     }, []);
@@ -66,9 +73,12 @@ export const SelectionPage = () => {
         setLocating(prevState => !prevState);
     }
 
+    const handleCloseIntroModal: () => void = () => {
+        setShowIntro(false);
+    }
+
     return (
         <Stack direction='column' height='calc(100vh - 64px)'>
-            <Typography justifyContent='center' variant='h6' sx={{mt: 2, ml: 1}}>Pick your location</Typography>
             <Box width='100%'>
                 <MapView
                     setRegion={setRegion}
@@ -78,7 +88,7 @@ export const SelectionPage = () => {
                 />
                 <Box sx={{
                     position: 'absolute',
-                    top: 120,
+                    top: 80,
                     left: 60,
                     zIndex: 1000
                 }}>
@@ -91,7 +101,6 @@ export const SelectionPage = () => {
                     </Stack>
                 </Box>
             </Box>
-            <Typography variant='h6' sx={{mt: 2, ml: 1}}>Choose your difficulty</Typography>
             <SizeButtons size={size} setSize={setSize}/>
             <Stack direction='row' spacing={2} justifyContent='center' mb={2}>
                 <Button onClick={handleCreateButton} variant='contained'>Play</Button>
@@ -99,7 +108,7 @@ export const SelectionPage = () => {
             {showAlert && <Box display='flex' justifyContent='center'>
                 <Alert severity='warning'>Please select land in North America</Alert>
             </Box>}
-
+            <IntroModal open={showIntro} onClose={handleCloseIntroModal} />
         </Stack>
     )
 }
