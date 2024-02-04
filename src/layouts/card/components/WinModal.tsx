@@ -1,6 +1,6 @@
 import {Box, Button, Modal, Typography} from "@mui/material";
 import {useNavigate} from "react-router";
-import React from "react";
+import React, {useEffect} from "react";
 
 const modalStyle = {
     position: 'absolute',
@@ -23,7 +23,10 @@ export const WinModal: React.FC <{
     setStartConfetti: React.Dispatch<React.SetStateAction<boolean>>
 }> = (props) => {
     const navigate = useNavigate();
-    props.setStartConfetti(true);
+
+    useEffect(() => {
+        props.setStartConfetti(true);
+    }, []);
 
     return (
         <Modal
