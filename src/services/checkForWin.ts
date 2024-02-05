@@ -1,3 +1,10 @@
+/**
+ * Checks bingo card for winning state.
+ * @param lineMarks - 1D number array representing the bingo grid (0 unselected, 1 selected) formed by
+ * scanning the grid left to right, top to bottom.
+ * @param size - side dimension of bingo card
+ * @return true if player has won
+ */
 export const checkForWin = (lineMarks: number[], size: number) => {
     // convert to tabular array
     const tableMarks: number[][] = [];

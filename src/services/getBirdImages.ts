@@ -19,6 +19,14 @@ interface Image {
     "ml_link": string;
 }
 
+/**
+ * Creates an array of bird Image objects to fit the specified bingo card size. Images are determined
+ * by assembling a list of common birds for the specified region for the appropriate season. 80% of the
+ * birds are the top most common birds, and the last 20% are rarer birds. Order is randomized by date.
+ * @param region - BCR number
+ * @param size - side dimension of bingo card
+ * @return array of Image objects
+ */
 export const getBirdImages = (region: string, size: number) => {
 
     // subtract time difference between UTC and PST so cards update in the night

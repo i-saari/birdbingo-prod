@@ -7,8 +7,13 @@ import {Box, Stack, ToggleButton, ToggleButtonGroup} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import useMediaQuery from "@mui/material/useMediaQuery";
 
+/**
+ * This component shows the bingo card size buttons.
+ */
 export const SizeButtons: React.FC <{
+    /** Chosen card size */
     size: number,
+    /** Hook to set card size */
     setSize: React.Dispatch<React.SetStateAction<number>>
 }> = (props) => {
     // indicator if user is using wide screen

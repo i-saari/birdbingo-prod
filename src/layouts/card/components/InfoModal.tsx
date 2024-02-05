@@ -30,9 +30,15 @@ const modalStyle = {
     overflow: 'scroll'
 };
 
+/**
+ * This component shows a modal with the bird image and details.
+ */
 export const InfoModal: React.FC <{
+    /** Trigger to open model */
     open: boolean,
+    /** Action when modal is closed */
     onClose: () => void,
+    /** Photographer information to display */
     imageInfo: Image | undefined
 }> = (props) => {
     return (

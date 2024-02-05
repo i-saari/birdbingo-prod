@@ -11,8 +11,13 @@ interface Image {
     "ml_link": string;
 }
 
+/**
+ * This component shows the bird image with an optional dark overlay and checkmark.
+ */
 export const ImageWithOverlay: React.FC <{
+    /** Bird image information */
     bird: Image,
+    /** Indicator to show overlay with checkmark */
     checked: boolean
 }> = (props) => {
     const overlayStyle: React.CSSProperties = {

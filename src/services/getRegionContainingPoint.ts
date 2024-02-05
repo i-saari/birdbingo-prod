@@ -2,6 +2,11 @@ import BCRData from "../data/BCR.json";
 // @ts-expect-error -- turf/dist does not correctly include declaration file
 import { FeatureCollection, featureEach, booleanPointInPolygon, flatten, Feature} from "@turf/turf";
 
+/**
+ * Determines which BCR region contains the specified point
+ * @param point - leaflet latlng objects in order [longitude, latitude]
+ * @return BCR region containing point
+ */
 export const getRegionContainingPoint = (point: number[]) => {
     // const turf = require('@turf/turf');
     // const { FeatureCollection, featureEach, booleanPointInPolygon, flatten, Feature} = turf;

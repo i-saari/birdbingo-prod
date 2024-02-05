@@ -18,8 +18,13 @@ const modalStyle = {
     overflow: 'scroll'
 };
 
+/**
+ * This component shows a modal with help information.
+ */
 export const HelpModal: React.FC <{
+    /** Trigger to open model */
     open: boolean,
+    /** Action when modal is closed */
     onClose: () => void,
 }> = (props) => {
 

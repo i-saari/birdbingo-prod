@@ -21,6 +21,9 @@ interface Image {
     "ml_link": string;
 }
 
+/**
+ * This component shows the bingo card consisting of a grid of bird images.
+ */
 export const CardPage = () => {
     const [date, setDate] = useState(0);
     const [region, setRegion] = useState('');

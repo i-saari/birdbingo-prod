@@ -5,10 +5,17 @@ import React from "react";
 import L from "leaflet";
 import {LocationMarker} from "./LocationMarker";
 
+/**
+ * This component shows a map with BCR region polylines.
+ */
 export const MapView: React.FC<{
+    /** Hook to set region according to location */
     setRegion: React.Dispatch<React.SetStateAction<string>>,
+    /** Triggers geolocation */
     locating: boolean,
+    /** Hook to reset locating trigger */
     setLocating: React.Dispatch<React.SetStateAction<boolean>>,
+    /** Indicates whether to show region polylines */
     showBoundaries: boolean
 }> = (props) => {
 

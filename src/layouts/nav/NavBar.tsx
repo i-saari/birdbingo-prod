@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import Title from "../../assets/images/title.png";
 import {HelpIcon} from "../../assets/icons/HelpIcon.tsx";
 
+/**
+ * This component shows a navigation bar at the top of the screen.
+ */
 export const NavBar = () => {
     const [openHelpModal, setOpenHelpModal] = useState(false);
 
@@ -15,8 +18,6 @@ export const NavBar = () => {
     const handleCloseHelpModal: () => void = () => {
         setOpenHelpModal(false);
     }
-
-
 
     return (
         <Box sx={{ flexGrow: 1 }}>

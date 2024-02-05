@@ -12,6 +12,9 @@ import {MapView} from "./components/MapView";
 import {SizeButtons} from "./components/SizeButtons";
 import {IntroModal} from "./components/IntroModal";
 
+/**
+ * This component shows the homepage with a map, size buttons and Play button.
+ */
 export const SelectionPage = () => {
     const [region, setRegion] = useState('');
     const [size, setSize] = useState(3);

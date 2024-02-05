@@ -16,17 +16,24 @@ const modalStyle = {
     overflow: 'scroll'
 };
 
+/**
+ * This component shows a modal when the player wins.
+ */
 export const WinModal: React.FC <{
+    /** Trigger to open model */
     open: boolean,
+    /** Action when modal is closed */
     onClose: () => void,
+    /** Action when user clicks Continue button */
     handleContinue: () => void
+    /** Trigger confetti */
     setStartConfetti: React.Dispatch<React.SetStateAction<boolean>>
 }> = (props) => {
     const navigate = useNavigate();
 
     useEffect(() => {
         props.setStartConfetti(true);
-    }, []);
+    }, );
 
     return (
         <Modal

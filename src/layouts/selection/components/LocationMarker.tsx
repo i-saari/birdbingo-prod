@@ -5,9 +5,15 @@ import L from "leaflet"
 import {getRegionContainingPoint} from "../../../services/getRegionContainingPoint";
 import MarkerIcon from "../../../assets/images/marker-icon.png";
 
+/**
+ * This component controls the map location marker. Includes geolocation logic.
+ */
 export const LocationMarker: React.FC<{
+    /** Triggers geolocation */
     locating: boolean,
+    /** Hook to reset locating trigger */
     setLocating: React.Dispatch<React.SetStateAction<boolean>>,
+    /** Hook to set region according to location */
     setRegion: React.Dispatch<React.SetStateAction<string>>
 }> = (props) => {
     const [position, setPosition] = useState<LatLngExpression>([0,0]);

@@ -19,8 +19,13 @@ const modalStyle = {
     overflow: 'scroll'
 };
 
+/**
+ * This component shows a modal with a guide on how to play.
+ */
 export const IntroModal: React.FC <{
+    /** Trigger to open model */
     open: boolean,
+    /** Action when modal is closed */
     onClose: () => void,
 }> = (props) => {
     return (
