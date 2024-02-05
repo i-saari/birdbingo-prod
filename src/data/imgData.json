@@ -84,7 +84,7 @@
     "ml_number": "180195071",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/180195071/1200",
     "species_common": "Sandhill Crane",
-    "photographer": "Lorri Howski \u00f0\u009f\u00a6\u008b",
+    "photographer": "Lorri Howski",
     "date": "September 22, 2019",
     "location": "Milwaukee, Wisconsin, United States",
     "ml_link": "https://macaulaylibrary.org/photo/180195071"
@@ -104,7 +104,7 @@
     "ml_number": "393341331",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/393341331/1200",
     "species_common": "Ainley's Storm-Petrel",
-    "photographer": "Fernando Anand Medrano Mart\u00c3\u00adnez",
+    "photographer": "Fernando Anand Medrano Martinez",
     "date": "November 20, 2021",
     "location": "Ensenada, Baja California, Mexico",
     "ml_link": "https://macaulaylibrary.org/photo/393341331"
@@ -296,7 +296,7 @@
     "species_common": "Long-eared Owl",
     "photographer": "Heiko Heerklotz",
     "date": "November 18, 2017",
-    "location": "Freiburg im Breisgau (Stadtkreis), Baden-W\u00fcrttemberg, Germany",
+    "location": "Freiburg im Breisgau (Stadtkreis), Baden-Wurttemberg, Germany",
     "ml_link": "https://macaulaylibrary.org/photo/75486701"
   },
   {
@@ -576,7 +576,7 @@
     "species_common": "White-eared Hummingbird",
     "photographer": "Dorian Anderson",
     "date": "June 8, 2018",
-    "location": "Intibuc\u00c3\u00a1, Honduras",
+    "location": "Intibuca, Honduras",
     "ml_link": "https://macaulaylibrary.org/photo/149052511"
   },
   {
@@ -646,7 +646,7 @@
     "species_common": "Northern Emerald-Toucanet",
     "photographer": "Andres Vasquez Noboa",
     "date": "March 8, 2023",
-    "location": "San Jos\u00c3\u00a9, Costa Rica",
+    "location": "San Jose, Costa Rica",
     "ml_link": "https://macaulaylibrary.org/photo/547262151"
   },
   {
@@ -666,7 +666,7 @@
     "species_common": "White-eared Ground-Sparrow",
     "photographer": "John van Dort",
     "date": "September 23, 2015",
-    "location": "San Jos\u00c3\u00a9, Costa Rica",
+    "location": "San Jose, Costa Rica",
     "ml_link": "https://macaulaylibrary.org/photo/20178241"
   },
   {
@@ -754,7 +754,7 @@
     "ml_number": "84885811",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/84885811/1200",
     "species_common": "Sinaloa Wren",
-    "photographer": "Bradley Hacker \u00f0\u009f\u00a6\u009c",
+    "photographer": "Bradley Hacker",
     "date": "February 4, 2018",
     "location": "Santa Cruz, Arizona, United States",
     "ml_link": "https://macaulaylibrary.org/photo/84885811"
@@ -774,9 +774,9 @@
     "ml_number": "68129541",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/68129541/1200",
     "species_common": "Blue-gray Tanager",
-    "photographer": "Guillermo  Sabor\u00c3\u00ado Vega",
+    "photographer": "Guillermo  Saborio Vega",
     "date": "August 27, 2017",
-    "location": "San Jos\u00c3\u00a9, Costa Rica",
+    "location": "San Jose, Costa Rica",
     "ml_link": "https://macaulaylibrary.org/photo/68129541"
   },
   {
@@ -804,9 +804,9 @@
     "ml_number": "152770201",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/152770201/1200",
     "species_common": "Black-headed Saltator",
-    "photographer": "Guillermo  Sabor\u00c3\u00ado Vega",
+    "photographer": "Guillermo  Saborio Vega",
     "date": "April 12, 2019",
-    "location": "San Jos\u00c3\u00a9, Costa Rica",
+    "location": "San Jose, Costa Rica",
     "ml_link": "https://macaulaylibrary.org/photo/152770201"
   },
   {
@@ -834,9 +834,9 @@
     "ml_number": "38931851",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/38931851/1200",
     "species_common": "Boat-billed Flycatcher",
-    "photographer": "Jorge Mu\u00c3\u00b1oz Garc\u00c3\u00ada   CAQUETA BIRDING",
+    "photographer": "Jorge Munoz Garcia   CAQUETA BIRDING",
     "date": "October 1, 2016",
-    "location": "Caquet\u00c3\u00a1, Colombia",
+    "location": "Caqueta, Colombia",
     "ml_link": "https://macaulaylibrary.org/photo/38931851"
   },
   {
@@ -876,7 +876,7 @@
     "species_common": "Russet-crowned Motmot",
     "photographer": "Alan Van Norman",
     "date": "February 17, 2013",
-    "location": "Tuxtla Guti\u00c3\u00a9rrez, Chiapas, Mexico",
+    "location": "Tuxtla Gutierrez, Chiapas, Mexico",
     "ml_link": "https://macaulaylibrary.org/photo/37792821"
   },
   {
@@ -884,7 +884,7 @@
     "ml_number": "78360921",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/78360921/1200",
     "species_common": "Vermilion Flycatcher",
-    "photographer": "Bradley Hacker \u00f0\u009f\u00a6\u009c",
+    "photographer": "Bradley Hacker",
     "date": "December 16, 2017",
     "location": "Los Angeles, California, United States",
     "ml_link": "https://macaulaylibrary.org/photo/78360921"
@@ -956,7 +956,7 @@
     "species_common": "Green-throated Mountain-gem",
     "photographer": "Oliver  Komar",
     "date": "November 9, 2016",
-    "location": "Cort\u00c3\u00a9s, Honduras",
+    "location": "Cortes, Honduras",
     "ml_link": "https://macaulaylibrary.org/photo/40515631"
   },
   {
@@ -1114,7 +1114,7 @@
     "ml_number": "24774751",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/24774751/1200",
     "species_common": "Blue-capped Motmot",
-    "photographer": "Margarita L\u00c3\u00b3pez",
+    "photographer": "Margarita Lopez",
     "date": "February 7, 2016",
     "location": "Xalapa, Veracruz, Mexico",
     "ml_link": "https://macaulaylibrary.org/photo/24774751"
@@ -1174,9 +1174,9 @@
     "ml_number": "103695331",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/103695331/1200",
     "species_common": "Bananaquit",
-    "photographer": "Marcos Eug\u00c3\u00aanio Birding Guide",
+    "photographer": "Marcos Eugenio Birding Guide",
     "date": "October 27, 2014",
-    "location": "S\u00c3\u00a3o Paulo, Brazil",
+    "location": "Sao Paulo, Brazil",
     "ml_link": "https://macaulaylibrary.org/photo/103695331"
   },
   {
@@ -1196,7 +1196,7 @@
     "species_common": "Lesson's Motmot",
     "photographer": "Oliver  Komar",
     "date": "October 15, 2016",
-    "location": "Cort\u00c3\u00a9s, Honduras",
+    "location": "Cortes, Honduras",
     "ml_link": "https://macaulaylibrary.org/photo/37491521"
   },
   {
@@ -1374,9 +1374,9 @@
     "ml_number": "35655601",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/35655601/1200",
     "species_common": "Roadside Hawk",
-    "photographer": "Bradley Hacker \u00f0\u009f\u00a6\u009c",
+    "photographer": "Bradley Hacker",
     "date": "December 23, 2014",
-    "location": "Cocl\u00c3\u00a9, Panama",
+    "location": "Cocle, Panama",
     "ml_link": "https://macaulaylibrary.org/photo/35655601"
   },
   {
@@ -1426,7 +1426,7 @@
     "species_common": "Northern Jacana",
     "photographer": "Ian Davies",
     "date": "May 15, 2017",
-    "location": "Pet\u00c3\u00a9n, Guatemala",
+    "location": "Peten, Guatemala",
     "ml_link": "https://macaulaylibrary.org/photo/66288361"
   },
   {
@@ -1476,7 +1476,7 @@
     "species_common": "Western Spindalis (Cuban)",
     "photographer": "Kenneth Pinnow",
     "date": "January 4, 2016",
-    "location": "Sancti Sp\u00c3\u00adritus, Cuba",
+    "location": "Sancti Spiritus, Cuba",
     "ml_link": "https://macaulaylibrary.org/photo/23525741"
   },
   {
@@ -1524,9 +1524,9 @@
     "ml_number": "139204781",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/139204781/1200",
     "species_common": "Mexican Jay",
-    "photographer": "Mauricio L\u00c3\u00b3pez",
+    "photographer": "Mauricio Lopez",
     "date": "February 4, 2019",
-    "location": "Santa Catarina, Nuevo Le\u00c3\u00b3n, Mexico",
+    "location": "Santa Catarina, Nuevo Leon, Mexico",
     "ml_link": "https://macaulaylibrary.org/photo/139204781"
   },
   {
@@ -1596,7 +1596,7 @@
     "species_common": "Mallard",
     "photographer": "Christoph Moning",
     "date": "November 3, 2012",
-    "location": "M\u00c3\u00bcnchen (Kreisfreie Stadt), Bayern, Germany",
+    "location": "Munchen (Kreisfreie Stadt), Bayern, Germany",
     "ml_link": "https://macaulaylibrary.org/photo/63736171"
   },
   {
@@ -1654,9 +1654,9 @@
     "ml_number": "87489801",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/87489801/1200",
     "species_common": "Gray-breasted Wood-Wren",
-    "photographer": "Guillermo  Sabor\u00c3\u00ado Vega",
+    "photographer": "Guillermo  Saborio Vega",
     "date": "February 24, 2018",
-    "location": "San Jos\u00c3\u00a9, Costa Rica",
+    "location": "San Jose, Costa Rica",
     "ml_link": "https://macaulaylibrary.org/photo/87489801"
   },
   {
@@ -1764,9 +1764,9 @@
     "ml_number": "64808261",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/164601111/1800",
     "species_common": "Berylline Hummingbird",
-    "photographer": "Carlos Garc\u00c3\u00ada",
+    "photographer": "Carlos Garcia",
     "date": "July 29, 2017",
-    "location": "Villa de \u00c3\u0081lvarez, Colima, Mexico",
+    "location": "Villa de Alvarez, Colima, Mexico",
     "ml_link": "https://macaulaylibrary.org/photo/64808261"
   },
   {
@@ -1776,7 +1776,7 @@
     "species_common": "Flame-colored Tanager",
     "photographer": "Blair Dudeck",
     "date": "November 25, 2018",
-    "location": "San Jos\u00c3\u00a9, Costa Rica",
+    "location": "San Jose, Costa Rica",
     "ml_link": "https://macaulaylibrary.org/photo/129600741"
   },
   {
@@ -1854,9 +1854,9 @@
     "ml_number": "204241621",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/204241621/1200",
     "species_common": "Horned Grebe",
-    "photographer": "Ivan Sj\u00c3\u00b6gren",
+    "photographer": "Ivan Sjogren",
     "date": "April 19, 2014",
-    "location": "Stockholms l\u00c3\u00a4n [SE-01], Sweden",
+    "location": "Stockholms lan [SE-01], Sweden",
     "ml_link": "https://macaulaylibrary.org/photo/204241621"
   },
   {
@@ -1896,7 +1896,7 @@
     "species_common": "Gadwall",
     "photographer": "Daniel Pettersson",
     "date": "November 8, 2020",
-    "location": "Stockholms l\u00c3\u00a4n [SE-01], Sweden",
+    "location": "Stockholms lan [SE-01], Sweden",
     "ml_link": "https://macaulaylibrary.org/photo/283493481"
   },
   {
@@ -1956,7 +1956,7 @@
     "species_common": "American Kestrel (Cuban)",
     "photographer": "Adam Bowley",
     "date": "27 Feb 2019",
-    "location": "Camag\u00c3\u00bcey, Cuba",
+    "location": "Camaguey, Cuba",
     "ml_link": "https://macaulaylibrary.org/photo/205399281"
   },
   {
@@ -2026,7 +2026,7 @@
     "species_common": "Red-lored Parrot",
     "photographer": "Paul Jones",
     "date": "December 30, 2015",
-    "location": "Panam\u00c3\u00a1, Panama",
+    "location": "Panama, Panama",
     "ml_link": "https://macaulaylibrary.org/photo/189980861"
   },
   {
@@ -2044,7 +2044,7 @@
     "ml_number": "51363091",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/51363091/1200",
     "species_common": "Little Blue Heron",
-    "photographer": "Etienne Artigau\u00f0\u009f\u00a6\u00a9",
+    "photographer": "Etienne Artigau",
     "date": "March 6, 2017",
     "location": "Brevard, Florida, United States",
     "ml_link": "https://macaulaylibrary.org/photo/51363091"
@@ -2084,7 +2084,7 @@
     "ml_number": "130494231",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/130494231/1200",
     "species_common": "Happy Wren",
-    "photographer": "Bradley Hacker \u00f0\u009f\u00a6\u009c",
+    "photographer": "Bradley Hacker",
     "date": "December 19, 2018",
     "location": "Pochutla, Oaxaca, Mexico",
     "ml_link": "https://macaulaylibrary.org/photo/130494231"
@@ -2236,7 +2236,7 @@
     "species_common": "Clay-colored Thrush",
     "photographer": "Josiah Verbrugge",
     "date": "December 19, 2019",
-    "location": "San Jos\u00c3\u00a9, Costa Rica",
+    "location": "San Jose, Costa Rica",
     "ml_link": "https://macaulaylibrary.org/photo/200409781"
   },
   {
@@ -2266,7 +2266,7 @@
     "species_common": "Spot-breasted Wren",
     "photographer": "Luis Guillermo",
     "date": "May 27, 2019",
-    "location": "Benito Ju\u00c3\u00a1rez, Quintana Roo, Mexico",
+    "location": "Benito Juarez, Quintana Roo, Mexico",
     "ml_link": "https://macaulaylibrary.org/photo/161374821"
   },
   {
@@ -2276,7 +2276,7 @@
     "species_common": "Blue-footed Booby",
     "photographer": "Darren Clark",
     "date": "September 1, 2014",
-    "location": "Gal\u00c3\u00a1pagos, Ecuador",
+    "location": "Galapagos, Ecuador",
     "ml_link": "https://macaulaylibrary.org/photo/52523581"
   },
   {
@@ -2354,7 +2354,7 @@
     "ml_number": "159214971",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/159214971/1200",
     "species_common": "Gilded Flicker",
-    "photographer": "Bradley Hacker \u00f0\u009f\u00a6\u009c",
+    "photographer": "Bradley Hacker",
     "date": "May 17, 2019",
     "location": "San Bernardino, California, United States",
     "ml_link": "https://macaulaylibrary.org/photo/159214971"
@@ -2656,7 +2656,7 @@
     "species_common": "Clarion Wren",
     "photographer": "Amy McAndrews",
     "date": "April 22, 2022",
-    "location": "Tecom\u00e1n, Colima, Mexico",
+    "location": "Tecoman, Colima, Mexico",
     "ml_link": "https://macaulaylibrary.org/photo/447244401"
   },
   {
@@ -2846,7 +2846,7 @@
     "species_common": "Orange-billed Nightingale-Thrush",
     "photographer": "John van Dort",
     "date": "September 16, 2016",
-    "location": "Francisco Moraz\u00c3\u00a1n, Honduras",
+    "location": "Francisco Morazan, Honduras",
     "ml_link": "https://macaulaylibrary.org/photo/35257471"
   },
   {
@@ -2856,7 +2856,7 @@
     "species_common": "Turquoise-browed Motmot",
     "photographer": "Oliver  Komar",
     "date": "July 24, 2016",
-    "location": "Francisco Moraz\u00c3\u00a1n, Honduras",
+    "location": "Francisco Morazan, Honduras",
     "ml_link": "https://macaulaylibrary.org/photo/31573151"
   },
   {
@@ -2904,7 +2904,7 @@
     "ml_number": "64495951",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/64495951/1200",
     "species_common": "Cinnamon-rumped Seedeater",
-    "photographer": "Carlos Garc\u00c3\u00ada",
+    "photographer": "Carlos Garcia",
     "date": "July 22, 2017",
     "location": "Comala, Colima, Mexico",
     "ml_link": "https://macaulaylibrary.org/photo/64495951"
@@ -3056,7 +3056,7 @@
     "species_common": "Socorro Parakeet",
     "photographer": "Amy McAndrews",
     "date": "February 16, 2017",
-    "location": "Tecom\u00c3\u00a1n, Colima, Mexico",
+    "location": "Tecoman, Colima, Mexico",
     "ml_link": "https://macaulaylibrary.org/photo/57433831"
   },
   {
@@ -3186,7 +3186,7 @@
     "species_common": "Blue-black Grassquit",
     "photographer": "Josanel Sugasti -photographyandbirdingtourspanama",
     "date": "September 13, 2019",
-    "location": "Panam\u00c3\u00a1, Panama",
+    "location": "Panama, Panama",
     "ml_link": "https://macaulaylibrary.org/photo/178626291"
   },
   {
@@ -3196,7 +3196,7 @@
     "species_common": "Masked Tityra",
     "photographer": "Tim Lenz",
     "date": "May 3, 2015",
-    "location": "Panam\u00c3\u00a1, Panama",
+    "location": "Panama, Panama",
     "ml_link": "https://macaulaylibrary.org/photo/35572591"
   },
   {
@@ -3286,7 +3286,7 @@
     "species_common": "Golden-crowned Warbler",
     "photographer": "Chris Wood",
     "date": "September 14, 2013",
-    "location": "Ciudad Aut\u00c3\u00b3noma de Buenos Aires, Argentina",
+    "location": "Ciudad Autonoma de Buenos Aires, Argentina",
     "ml_link": "https://macaulaylibrary.org/photo/20062851"
   },
   {
@@ -3354,9 +3354,9 @@
     "ml_number": "256364381",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/256364381/1200",
     "species_common": "Red-billed Pigeon",
-    "photographer": "Guillermo  Sabor\u00c3\u00ado Vega",
+    "photographer": "Guillermo  Saborio Vega",
     "date": "August 5, 2020",
-    "location": "San Jos\u00c3\u00a9, Costa Rica",
+    "location": "San Jose, Costa Rica",
     "ml_link": "https://macaulaylibrary.org/photo/256364381"
   },
   {
@@ -3494,9 +3494,9 @@
     "ml_number": "64328791",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/612451292/1800",
     "species_common": "Olive-throated Parakeet",
-    "photographer": "Carlos Echeverr\u00c3\u00ada",
+    "photographer": "Carlos Echeverria",
     "date": "February 13, 2017",
-    "location": "Pet\u00c3\u00a9n, Guatemala",
+    "location": "Peten, Guatemala",
     "ml_link": "https://macaulaylibrary.org/photo/64328791"
   },
   {
@@ -3596,7 +3596,7 @@
     "species_common": "Socorro Wren",
     "photographer": "CIANALA VERACRUZ",
     "date": "March 2, 2018",
-    "location": "Tecom\u00c3\u00a1n, Colima, Mexico",
+    "location": "Tecoman, Colima, Mexico",
     "ml_link": "https://macaulaylibrary.org/photo/282331301"
   },
   {
@@ -3756,7 +3756,7 @@
     "species_common": "Keel-billed Toucan",
     "photographer": "Rolando Jordan",
     "date": "July 17, 2016",
-    "location": "Col\u00c3\u00b3n, Panama",
+    "location": "Colon, Panama",
     "ml_link": "https://macaulaylibrary.org/photo/38999661"
   },
   {
@@ -3896,7 +3896,7 @@
     "species_common": "Orange-chinned Parakeet",
     "photographer": "Jay McGowan",
     "date": "December 30, 2019",
-    "location": "Col\u00c3\u00b3n, Panama",
+    "location": "Colon, Panama",
     "ml_link": "https://macaulaylibrary.org/photo/200072291"
   },
   {
@@ -3906,7 +3906,7 @@
     "species_common": "Sinaloa Crow",
     "photographer": "Cole Gaerber",
     "date": "December 19, 2016",
-    "location": "Bah\u00c3\u00ada de Banderas, Nayarit, Mexico",
+    "location": "Bahia de Banderas, Nayarit, Mexico",
     "ml_link": "https://macaulaylibrary.org/photo/44397921"
   },
   {
@@ -3926,7 +3926,7 @@
     "species_common": "Red-legged Honeycreeper",
     "photographer": "Andres Vasquez Noboa",
     "date": "December 11, 2022",
-    "location": "Panam\u00c3\u00a1, Panama",
+    "location": "Panama, Panama",
     "ml_link": "https://macaulaylibrary.org/photo/513864281"
   },
   {
@@ -4084,7 +4084,7 @@
     "ml_number": "50106001",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/64995071/1800",
     "species_common": "Red-bellied Woodpecker",
-    "photographer": "Carl Giometti \u00f0\u009f\u008d\u00b9",
+    "photographer": "Carl Giometti",
     "date": "March 4, 2017",
     "location": "Cook, Illinois, United States",
     "ml_link": "https://macaulaylibrary.org/photo/50106001"
@@ -4166,7 +4166,7 @@
     "species_common": "Azure-crowned Hummingbird",
     "photographer": "John van Dort",
     "date": "July 1, 2016",
-    "location": "Francisco Moraz\u00c3\u00a1n, Honduras",
+    "location": "Francisco Morazan, Honduras",
     "ml_link": "https://macaulaylibrary.org/photo/30768081"
   },
   {
@@ -4214,7 +4214,7 @@
     "ml_number": "295449711",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/295449711/1200",
     "species_common": "Cozumel Emerald",
-    "photographer": "Daniel  Garza Tob\u00c3\u00b3n",
+    "photographer": "Daniel  Garza Tobon",
     "date": "December 27, 2020",
     "location": "Cozumel, Quintana Roo, Mexico",
     "ml_link": "https://macaulaylibrary.org/photo/295449711"
@@ -4336,7 +4336,7 @@
     "species_common": "Socorro Mockingbird",
     "photographer": "John W. Cobb",
     "date": "December 2, 2017",
-    "location": "Tecom\u00c3\u00a1n, Colima, Mexico",
+    "location": "Tecoman, Colima, Mexico",
     "ml_link": "https://macaulaylibrary.org/photo/78522761"
   },
   {
@@ -4426,7 +4426,7 @@
     "species_common": "Red-footed Booby",
     "photographer": "Marilyn Henry",
     "date": "November 14, 2016",
-    "location": "Gal\u00c3\u00a1pagos, Ecuador",
+    "location": "Galapagos, Ecuador",
     "ml_link": "https://macaulaylibrary.org/photo/41077191"
   },
   {
@@ -4496,7 +4496,7 @@
     "species_common": "Crescent-chested Warbler",
     "photographer": "Patrick Van Thull",
     "date": "March 8, 2019",
-    "location": "San Pedro Garza Garc\u00c3\u00ada, Nuevo Le\u00c3\u00b3n, Mexico",
+    "location": "San Pedro Garza Garcia, Nuevo Leon, Mexico",
     "ml_link": "https://macaulaylibrary.org/photo/144333121"
   },
   {
@@ -4554,7 +4554,7 @@
     "ml_number": "44762061",
     "img": "https://cdn.download.ams.birds.cornell.edu/api/v1/asset/44762061/1200",
     "species_common": "Gray Thrasher",
-    "photographer": "Gerardo Marr\u00c3\u00b3n",
+    "photographer": "Gerardo Marron",
     "date": "January 5, 2017",
     "location": "La Paz, Baja California Sur, Mexico",
     "ml_link": "https://macaulaylibrary.org/photo/44762061"
@@ -4576,7 +4576,7 @@
     "species_common": "Eurasian Wigeon",
     "photographer": "Christoph Moning",
     "date": "November 29, 2009",
-    "location": "M\u00c3\u00bcnchen (Kreisfreie Stadt), Bayern, Germany",
+    "location": "Munchen (Kreisfreie Stadt), Bayern, Germany",
     "ml_link": "https://macaulaylibrary.org/photo/64163431"
   },
   {
