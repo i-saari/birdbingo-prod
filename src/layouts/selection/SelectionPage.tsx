@@ -20,7 +20,8 @@ export const SelectionPage = () => {
     const [size, setSize] = useState(3);
     const [showBoundaries, setShowBoundaries] = useState(false);
     const navigate = useNavigate();
-    const [showAlert, setShowAlert] = useState(false);
+    const [showLandAlert, setShowLandAlert] = useState(false);
+    const [showGeoAlert, setShowGeoAlert] = useState(false);
     const [showIntro, setShowIntro] = useState(false);
 
     // trigger to find user's location
@@ -46,21 +47,24 @@ export const SelectionPage = () => {
 
     const handleCreateButton = () => {
         if (region === '') {
-            setShowAlert(true);
+            setShowLandAlert(true);
         } else {
-            setShowAlert(false);
+            setShowLandAlert(false);
 
             // get previously stored game setup
             const storedDate = localStorage.getItem('date');
             const storedRegion = localStorage.getItem('region');
             const storedSize = localStorage.getItem('size');
 
-            localStorage.setItem('date', String(Math.floor(new Date().getTime() / 8.64e7)));
+            // subtract time difference between UTC and PST so cards update in the night
+            const utcToPst = 28800000
+
+            localStorage.setItem('date', String(Math.floor((new Date().getTime() - utcToPst) / 8.64e7)));
             localStorage.setItem('region', region);
             localStorage.setItem('size', String(size));
 
             if (storedDate && storedRegion && storedSize) {
-                if (parseInt(storedDate) !== Math.floor(new Date().getTime() / 8.64e7) ||
+                if (parseInt(storedDate) !== Math.floor((new Date().getTime() - utcToPst) / 8.64e7) ||
                     storedRegion !== region || parseInt(storedSize) !== size) {
                     // game setup doesn't match stored setup -> reset game
                     localStorage.setItem('selection', JSON.stringify(new Array(size * size).fill(0)));
@@ -73,6 +77,17 @@ export const SelectionPage = () => {
     }
 
     const handleFindMeButton = () => {
+        if (navigator.geolocation) {
+            navigator.permissions
+                .query({ name: "geolocation"})
+                .then(function (result) {
+                    if (result.state === "denied") {
+                        setShowGeoAlert(true);
+                    } else {
+                        setShowGeoAlert(false);
+                    }
+                })
+        }
         setLocating(prevState => !prevState);
     }
 
@@ -108,8 +123,11 @@ export const SelectionPage = () => {
             <Stack direction='row' spacing={2} justifyContent='center' mb={2}>
                 <Button onClick={handleCreateButton} variant='contained'>Play</Button>
             </Stack>
-            {showAlert && <Box display='flex' justifyContent='center'>
+            {showLandAlert && <Box display='flex' justifyContent='center'>
                 <Alert severity='warning'>Please select land in North America</Alert>
+            </Box>}
+            {showGeoAlert && <Box display='flex' justifyContent='center'>
+                <Alert severity='warning'>Please enable location services to use Find Me</Alert>
             </Box>}
             <IntroModal open={showIntro} onClose={handleCloseIntroModal} />
         </Stack>
