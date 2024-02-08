@@ -56,7 +56,7 @@ export const SelectionPage = () => {
             const storedRegion = localStorage.getItem('region');
             const storedSize = localStorage.getItem('size');
 
-            // subtract time difference between UTC and PST so cards update in the night
+            // subtract time difference between UTC and PST so selections update in the night
             const utcToPst = 28800000
 
             localStorage.setItem('date', String(Math.floor((new Date().getTime() - utcToPst) / 8.64e7)));
