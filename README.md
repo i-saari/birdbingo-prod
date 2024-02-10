@@ -1,6 +1,6 @@
 # Bird Bingo
 
-Visit the site at [www.birdbingo.fun] (https://www.birdbingo.fun/)
+Visit the site at [www.birdbingo.fun](https://www.birdbingo.fun/)
 
 ## How to Play
 To get started, select your location on the map, or press Find Me to automatically get your location. Then select the size of your bingo card by clicking on the birds below the map. Finally, click Play to start a new game. Cards are rearranged with new birds every night so check back tomorrow for a new game.
