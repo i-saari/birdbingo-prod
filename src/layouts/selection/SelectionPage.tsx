@@ -21,7 +21,7 @@ export const SelectionPage = () => {
     const [showBoundaries, setShowBoundaries] = useState(false);
     const navigate = useNavigate();
     const [showLandAlert, setShowLandAlert] = useState(false);
-    const [showGeoAlert, setShowGeoAlert] = useState(false);
+    const [showPermissionAlert, setShowPermissionAlert] = useState(false);
     const [showIntro, setShowIntro] = useState(false);
 
     // trigger to find user's location
@@ -82,9 +82,9 @@ export const SelectionPage = () => {
                 .query({ name: "geolocation"})
                 .then(function (result) {
                     if (result.state === "denied") {
-                        setShowGeoAlert(true);
+                        setShowPermissionAlert(true);
                     } else {
-                        setShowGeoAlert(false);
+                        setShowPermissionAlert(false);
                     }
                 })
         }
@@ -103,6 +103,7 @@ export const SelectionPage = () => {
                     locating={locating}
                     setLocating={setLocating}
                     showBoundaries={showBoundaries}
+                    setShowPermissionAlert={setShowPermissionAlert}
                 />
                 <Box sx={{
                     position: 'absolute',
@@ -126,7 +127,7 @@ export const SelectionPage = () => {
             {showLandAlert && <Box display='flex' justifyContent='center'>
                 <Alert severity='warning'>Please select land in North America</Alert>
             </Box>}
-            {showGeoAlert && <Box display='flex' justifyContent='center'>
+            {showPermissionAlert && <Box display='flex' justifyContent='center'>
                 <Alert severity='warning'>Please enable location services to use Find Me</Alert>
             </Box>}
             <IntroModal open={showIntro} onClose={handleCloseIntroModal} />

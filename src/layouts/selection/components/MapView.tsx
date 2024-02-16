@@ -16,7 +16,9 @@ export const MapView: React.FC<{
     /** Hook to reset locating trigger */
     setLocating: React.Dispatch<React.SetStateAction<boolean>>,
     /** Indicates whether to show region polylines */
-    showBoundaries: boolean
+    showBoundaries: boolean,
+    /** Hook to indicate geolocation failure */
+    setShowPermissionAlert: React.Dispatch<React.SetStateAction<boolean>>
 }> = (props) => {
 
     const geoStyle = {
@@ -49,7 +51,11 @@ export const MapView: React.FC<{
                     onEachFeature={onEachRegion}
 
                 />
-                <LocationMarker locating={props.locating} setLocating={props.setLocating} setRegion={props.setRegion} />
+                <LocationMarker locating={props.locating}
+                                setLocating={props.setLocating}
+                                setRegion={props.setRegion}
+                                setShowPermissionAlert={props.setShowPermissionAlert}
+                />
             </MapContainer>
         </div>
     )

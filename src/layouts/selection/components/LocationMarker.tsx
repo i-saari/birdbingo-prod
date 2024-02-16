@@ -14,7 +14,9 @@ export const LocationMarker: React.FC<{
     /** Hook to reset locating trigger */
     setLocating: React.Dispatch<React.SetStateAction<boolean>>,
     /** Hook to set region according to location */
-    setRegion: React.Dispatch<React.SetStateAction<string>>
+    setRegion: React.Dispatch<React.SetStateAction<string>>,
+    /** Hook to indicate geolocation failure */
+    setShowPermissionAlert: React.Dispatch<React.SetStateAction<boolean>>
 }> = (props) => {
     const [position, setPosition] = useState<LatLngExpression>([0,0]);
     const [showMarker, setShowMarker] = useState(false);
@@ -41,6 +43,7 @@ export const LocationMarker: React.FC<{
         locationerror() {
             props.setLocating(false);
             setShowMarker(false);
+            props.setShowPermissionAlert(true);
         }
     })
 
