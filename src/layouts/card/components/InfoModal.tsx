@@ -1,4 +1,3 @@
-import Box from "@mui/material/Box";
 import {Link, Modal, Stack, SvgIcon, Typography} from "@mui/material";
 import React from "react";
 import {PersonIcon} from "../../../assets/icons/PersonIcon.tsx";
@@ -48,7 +47,7 @@ export const InfoModal: React.FC <{
             aria-labelledby='modal-image'
             aria-describedby='modal-image-description'
         >
-            <Box sx={modalStyle}>
+            <Stack sx={modalStyle}>
                 <img
                     style={{
                         maxHeight: '100%',
@@ -95,7 +94,7 @@ export const InfoModal: React.FC <{
                 <Link href='https://www.birds.cornell.edu' variant='body1' target='_blank' underline='none'>
                     Cornell Lab
                 </Link>
-            </Box>
+            </Stack>
         </Modal>
     )
 }
